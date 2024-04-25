@@ -34,6 +34,9 @@
                                             <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                             <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Ses-c7-jQU" kind="presentation" modalPresentationStyle="fullScreen" id="qpa-5t-BGi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -163,6 +166,9 @@
                                             <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                             <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="gvd-c8-AOa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -320,6 +326,9 @@
                                             <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="rqk-ni-zLu" kind="presentation" modalPresentationStyle="fullScreen" id="ki2-BO-7TX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -445,6 +454,7 @@
                             <constraint firstItem="IA8-fk-DuU" firstAttribute="leading" secondItem="Fz1-qD-o7R" secondAttribute="leading" constant="45" id="iMk-52-WI2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9Lb-jp-ZDV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qko-aF-gjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -556,6 +566,9 @@
                                             <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="LFe-3H-Qlv" kind="presentation" modalPresentationStyle="fullScreen" id="N8w-lc-cTd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -579,6 +592,9 @@
             <point key="canvasLocation" x="-774" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ki2-BO-7TX"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
