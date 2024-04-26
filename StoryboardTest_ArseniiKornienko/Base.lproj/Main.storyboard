@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NOm-5Z-9eT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,22 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPt-2I-trn" userLabel="Login/signup">
-                                <rect key="frame" x="45" y="282" width="176.5" height="34"/>
+                                <rect key="frame" x="45" y="282" width="194" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN /" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcE-4H-NPU">
-                                        <rect key="frame" x="0.0" y="0.0" width="87" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                        <color key="textColor" name="LabelColor1"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cME-Qf-kS0">
-                                        <rect key="frame" x="87" y="0.0" width="89.5" height="34"/>
+                                        <rect key="frame" x="104.5" y="0.0" width="89.5" height="36"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Sign Up"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up" buttonSize="mini" titleAlignment="leading">
                                             <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                            <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" name="LabelColor2"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="Ses-c7-jQU" kind="presentation" modalPresentationStyle="fullScreen" id="qpa-5t-BGi"/>
@@ -41,7 +41,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7f-dr-5OL" userLabel="Username/Password View">
-                                <rect key="frame" x="45" y="350" width="317" height="110"/>
+                                <rect key="frame" x="45" y="352" width="317" height="110"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pGO-Eb-uwf" userLabel="Username">
                                         <rect key="frame" x="0.0" y="0.0" width="317" height="26"/>
@@ -49,14 +49,14 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKu-Pi-tSL">
                                                 <rect key="frame" x="0.0" y="0.0" width="317" height="24"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="LabelColor1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHo-HZ-Isv" userLabel="Line">
                                                 <rect key="frame" x="0.0" y="24" width="317" height="2"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="LabelColor1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -74,14 +74,14 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E6-yw-AnY">
                                                 <rect key="frame" x="0.0" y="0.0" width="317" height="24"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="LabelColor1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPe-HC-Orw" userLabel="Line">
                                                 <rect key="frame" x="0.0" y="24" width="317" height="2"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="LabelColor1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -94,7 +94,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="pGO-Eb-uwf" firstAttribute="top" secondItem="c7f-dr-5OL" secondAttribute="top" id="3e9-r4-KVV"/>
                                     <constraint firstItem="C9W-cm-gSA" firstAttribute="top" secondItem="pGO-Eb-uwf" secondAttribute="bottom" constant="58" id="8I3-Sd-XbD"/>
@@ -106,14 +106,14 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okX-5j-2VI">
-                                <rect key="frame" x="177" y="524" width="181" height="38"/>
-                                <color key="backgroundColor" red="0.24651844940000001" green="0.3693112093" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="177" y="526" width="181" height="38"/>
+                                <color key="backgroundColor" red="0.24567544459999999" green="0.37015438080000002" blue="0.83969348669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.24651844940000001" green="0.3693112093" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login">
                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.24651844940000001" green="0.3693112093" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" name="ButtonColor"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -123,7 +123,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nPt-2I-trn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="238" id="2Ne-gf-Bub"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c7f-dr-5OL" secondAttribute="trailing" constant="52" id="5Us-8m-5mx"/>
@@ -138,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2317" y="134"/>
+            <point key="canvasLocation" x="-2323" y="144"/>
         </scene>
         <!--View Controller Sign Up Light-->
         <scene sceneID="dtT-A5-hzN">
@@ -149,22 +149,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrV-iM-HnK" userLabel="Login/signup">
-                                <rect key="frame" x="45" y="282" width="169" height="34"/>
+                                <rect key="frame" x="45" y="282" width="232" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up /" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhv-jd-qHL">
-                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="159.5" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <color key="textColor" name="LabelColor1"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQE-c7-rFV">
-                                        <rect key="frame" x="100.5" y="0.0" width="68.5" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQE-c7-rFV">
+                                        <rect key="frame" x="159.5" y="0.0" width="72.5" height="48"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Sign Up"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Login" buttonSize="mini" titleAlignment="leading">
+                                        <buttonConfiguration key="configuration" style="plain" title="Login">
                                             <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                            <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" name="LabelColor2"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="gvd-c8-AOa"/>
@@ -173,7 +172,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPV-wR-8J5" userLabel="Username/Password View">
-                                <rect key="frame" x="45" y="350" width="317" height="194"/>
+                                <rect key="frame" x="45" y="364" width="317" height="194"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ewb-eX-8Qc" userLabel="Username">
                                         <rect key="frame" x="0.0" y="0.0" width="317" height="26"/>
@@ -181,14 +180,14 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjI-uz-LHM">
                                                 <rect key="frame" x="0.0" y="0.0" width="317" height="24"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="LabelColor1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2u-x0-vax" userLabel="Line">
                                                 <rect key="frame" x="0.0" y="24" width="317" height="2"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="LabelColor1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -206,14 +205,14 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQZ-Dn-eoZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="317" height="24"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="LabelColor1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crr-ir-IHc" userLabel="Line">
                                                 <rect key="frame" x="0.0" y="24" width="317" height="2"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="LabelColor1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -231,14 +230,14 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-enter password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMf-Ul-qNx">
                                                 <rect key="frame" x="0.0" y="0.0" width="317" height="24"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="LabelColor1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dng-ET-xyC" userLabel="Line">
                                                 <rect key="frame" x="0.0" y="24" width="317" height="2"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="LabelColor1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -251,7 +250,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="5DO-Z1-Lwq" firstAttribute="top" secondItem="iF8-uF-k9a" secondAttribute="bottom" constant="58" id="0IC-Ge-3qw"/>
                                     <constraint firstAttribute="trailing" secondItem="iF8-uF-k9a" secondAttribute="trailing" id="1PJ-re-j4s"/>
@@ -266,14 +265,14 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCw-n7-xK1">
-                                <rect key="frame" x="177" y="608" width="181" height="38"/>
+                                <rect key="frame" x="177" y="622" width="181" height="38"/>
                                 <color key="backgroundColor" red="0.24651844940000001" green="0.3693112093" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.24651844940000001" green="0.3693112093" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign Up">
                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.24651844940000001" green="0.3693112093" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" name="ButtonColor"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -283,7 +282,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qA8-3h-gUB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aPV-wR-8J5" firstAttribute="top" secondItem="rrV-iM-HnK" secondAttribute="bottom" constant="34" id="5oF-A7-iZ0"/>
                             <constraint firstItem="HCw-n7-xK1" firstAttribute="leading" secondItem="aPV-wR-8J5" secondAttribute="leading" constant="132" id="Caz-NC-gQb"/>
@@ -298,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJ1-c1-WBf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1599" y="134"/>
+            <point key="canvasLocation" x="-1581" y="144"/>
         </scene>
         <!--View Controller Sign Up Dark-->
         <scene sceneID="nGi-CT-Dp1">
@@ -458,7 +457,149 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qko-aF-gjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97" y="134"/>
+            <point key="canvasLocation" x="-13" y="144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VEh-9y-3YJ">
+            <objects>
+                <viewController id="NOm-5Z-9eT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N0h-gz-uRw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVz-oZ-ZNc">
+                                <rect key="frame" x="64.5" y="197" width="278" height="512"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 1" translatesAutoresizingMaskIntoConstraints="NO" id="Je4-nD-MtR">
+                                        <rect key="frame" x="84" y="0.0" width="117" height="115"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Q9T-wX-GjJ">
+                                        <rect key="frame" x="84" y="0.0" width="245" height="270"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up /" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNB-4G-AB2">
+                                        <rect key="frame" x="-3" y="141" width="159.5" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <color key="textColor" name="LabelColor1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4L8-FW-MDZ">
+                                        <rect key="frame" x="156.5" y="155" width="68.5" height="34"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Sign Up"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login" buttonSize="mini" titleAlignment="leading">
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                            <color key="baseForegroundColor" name="LabelColor2"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lA-p0-SK3">
+                                        <rect key="frame" x="-3" y="220" width="281" height="24"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <color key="textColor" name="LabelColor1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRT-Qs-bDP" userLabel="UsernameLine">
+                                        <rect key="frame" x="-3" y="244" width="281" height="2"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vQ-o8-Xll">
+                                        <rect key="frame" x="-3" y="309" width="281" height="24"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <color key="textColor" name="LabelColor1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grG-bF-rs3" userLabel="PasswordLine">
+                                        <rect key="frame" x="-3" y="333" width="281" height="2"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-enter password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQh-dj-ebT">
+                                        <rect key="frame" x="-3" y="398" width="281" height="24"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <color key="textColor" name="LabelColor1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWG-49-giL" userLabel="ReenterPasswordLine">
+                                        <rect key="frame" x="-3" y="422" width="281" height="2"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TP-0o-mum">
+                                        <rect key="frame" x="129" y="474" width="149" height="38"/>
+                                        <color key="backgroundColor" red="0.24651844940000001" green="0.3693112093" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.24651844940000001" green="0.3693112093" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login">
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" name="ButtonColor"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Je4-nD-MtR" firstAttribute="top" secondItem="IVz-oZ-ZNc" secondAttribute="top" id="1LY-u9-YO4"/>
+                                    <constraint firstItem="grG-bF-rs3" firstAttribute="bottom" secondItem="2vQ-o8-Xll" secondAttribute="bottom" constant="2" id="1Rg-vc-Oq1"/>
+                                    <constraint firstItem="CQh-dj-ebT" firstAttribute="leading" secondItem="sWG-49-giL" secondAttribute="leading" id="2ZL-Iy-H9G"/>
+                                    <constraint firstItem="4L8-FW-MDZ" firstAttribute="bottom" secondItem="zNB-4G-AB2" secondAttribute="bottom" id="5ad-eH-uga"/>
+                                    <constraint firstItem="zNB-4G-AB2" firstAttribute="leading" secondItem="pRT-Qs-bDP" secondAttribute="leading" id="5kW-It-BzE"/>
+                                    <constraint firstItem="grG-bF-rs3" firstAttribute="leading" secondItem="pRT-Qs-bDP" secondAttribute="leading" id="9rg-Tz-DQY"/>
+                                    <constraint firstItem="pRT-Qs-bDP" firstAttribute="bottom" secondItem="4lA-p0-SK3" secondAttribute="bottom" constant="2" id="AI0-2r-6aB"/>
+                                    <constraint firstItem="Q9T-wX-GjJ" firstAttribute="top" secondItem="Je4-nD-MtR" secondAttribute="top" id="AlT-74-tvL"/>
+                                    <constraint firstItem="zNB-4G-AB2" firstAttribute="top" secondItem="Je4-nD-MtR" secondAttribute="bottom" constant="26" id="Bgq-1q-CBy"/>
+                                    <constraint firstItem="grG-bF-rs3" firstAttribute="top" secondItem="2vQ-o8-Xll" secondAttribute="bottom" id="DW5-8c-LDv"/>
+                                    <constraint firstItem="pRT-Qs-bDP" firstAttribute="trailing" secondItem="Je4-nD-MtR" secondAttribute="trailing" constant="77" id="Ga1-gK-s3p"/>
+                                    <constraint firstItem="Q9T-wX-GjJ" firstAttribute="leading" secondItem="Je4-nD-MtR" secondAttribute="leading" id="RTs-Ru-r2x"/>
+                                    <constraint firstAttribute="trailing" secondItem="4L8-FW-MDZ" secondAttribute="trailing" constant="53" id="RdV-Ei-ap3"/>
+                                    <constraint firstItem="Je4-nD-MtR" firstAttribute="leading" secondItem="IVz-oZ-ZNc" secondAttribute="leading" constant="84" id="TFy-ni-cm3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Je4-nD-MtR" secondAttribute="trailing" constant="77" id="U7k-b8-O49"/>
+                                    <constraint firstItem="2vQ-o8-Xll" firstAttribute="trailing" secondItem="grG-bF-rs3" secondAttribute="trailing" id="UZg-TG-vRA"/>
+                                    <constraint firstItem="grG-bF-rs3" firstAttribute="top" secondItem="pRT-Qs-bDP" secondAttribute="bottom" constant="87" id="bDJ-rC-b7O"/>
+                                    <constraint firstItem="sWG-49-giL" firstAttribute="trailing" secondItem="grG-bF-rs3" secondAttribute="trailing" id="bhi-uT-72x"/>
+                                    <constraint firstItem="pRT-Qs-bDP" firstAttribute="top" secondItem="4lA-p0-SK3" secondAttribute="bottom" id="cN3-Jk-q3U"/>
+                                    <constraint firstItem="CQh-dj-ebT" firstAttribute="trailing" secondItem="sWG-49-giL" secondAttribute="trailing" id="cd6-R4-jMN"/>
+                                    <constraint firstItem="sWG-49-giL" firstAttribute="bottom" secondItem="CQh-dj-ebT" secondAttribute="bottom" constant="2" id="dnn-zm-0wD"/>
+                                    <constraint firstItem="2vQ-o8-Xll" firstAttribute="leading" secondItem="grG-bF-rs3" secondAttribute="leading" id="gJl-Ge-dk0"/>
+                                    <constraint firstAttribute="bottom" secondItem="4TP-0o-mum" secondAttribute="bottom" id="hZK-mw-hWw"/>
+                                    <constraint firstItem="pRT-Qs-bDP" firstAttribute="top" secondItem="zNB-4G-AB2" secondAttribute="bottom" constant="55" id="ih9-nQ-ydD"/>
+                                    <constraint firstItem="sWG-49-giL" firstAttribute="top" secondItem="grG-bF-rs3" secondAttribute="bottom" constant="87" id="kct-V1-HLI"/>
+                                    <constraint firstItem="pRT-Qs-bDP" firstAttribute="leading" secondItem="Je4-nD-MtR" secondAttribute="leading" constant="-87" id="lcK-in-NiT"/>
+                                    <constraint firstItem="4lA-p0-SK3" firstAttribute="trailing" secondItem="pRT-Qs-bDP" secondAttribute="trailing" id="qWU-Qw-uO2"/>
+                                    <constraint firstItem="grG-bF-rs3" firstAttribute="trailing" secondItem="pRT-Qs-bDP" secondAttribute="trailing" id="rEe-pH-Pnb"/>
+                                    <constraint firstItem="4TP-0o-mum" firstAttribute="top" secondItem="sWG-49-giL" secondAttribute="bottom" constant="50" id="rq2-jM-3HI"/>
+                                    <constraint firstItem="4lA-p0-SK3" firstAttribute="leading" secondItem="pRT-Qs-bDP" secondAttribute="leading" id="s0H-fr-bg5"/>
+                                    <constraint firstItem="4TP-0o-mum" firstAttribute="leading" secondItem="sWG-49-giL" secondAttribute="leading" constant="132" id="w2P-kq-phc"/>
+                                    <constraint firstItem="4L8-FW-MDZ" firstAttribute="leading" secondItem="zNB-4G-AB2" secondAttribute="trailing" id="xrK-RL-uDi"/>
+                                    <constraint firstItem="sWG-49-giL" firstAttribute="top" secondItem="CQh-dj-ebT" secondAttribute="bottom" id="zLD-px-C20"/>
+                                    <constraint firstItem="sWG-49-giL" firstAttribute="leading" secondItem="grG-bF-rs3" secondAttribute="leading" id="zlC-jo-0pv"/>
+                                    <constraint firstAttribute="trailing" secondItem="4TP-0o-mum" secondAttribute="trailing" id="zyf-xy-9wI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7x6-f2-dWz"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IVz-oZ-ZNc" firstAttribute="centerY" secondItem="7x6-f2-dWz" secondAttribute="centerY" id="e6a-db-Abe"/>
+                            <constraint firstItem="Je4-nD-MtR" firstAttribute="centerX" secondItem="7x6-f2-dWz" secondAttribute="centerX" id="nIe-q1-CAo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mhb-py-Xp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784" y="144"/>
         </scene>
         <!--View Controller Login Dark-->
         <scene sceneID="ppf-Vh-lIY">
@@ -469,7 +610,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rmz-uH-Elm" userLabel="Username/Password View">
-                                <rect key="frame" x="45" y="350" width="317" height="110"/>
+                                <rect key="frame" x="45" y="352" width="317" height="110"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KOg-bf-71u" userLabel="Username">
                                         <rect key="frame" x="0.0" y="0.0" width="317" height="26"/>
@@ -533,7 +674,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6k7-Cz-Jae">
-                                <rect key="frame" x="177" y="524" width="181" height="38"/>
+                                <rect key="frame" x="177" y="526" width="181" height="38"/>
                                 <color key="backgroundColor" red="0.24651844940000001" green="0.3693112093" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.24651844940000001" green="0.3693112093" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -549,16 +690,16 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DtZ-K7-d9S" userLabel="Login/signup">
-                                <rect key="frame" x="45" y="282" width="176.5" height="34"/>
+                                <rect key="frame" x="45" y="282" width="194" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN /" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glo-Nq-YIw">
-                                        <rect key="frame" x="0.0" y="0.0" width="87" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUc-iu-Z9t">
-                                        <rect key="frame" x="87" y="0.0" width="89.5" height="34"/>
+                                        <rect key="frame" x="104.5" y="0.0" width="89.5" height="36"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Sign Up"/>
@@ -589,15 +730,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gC-hU-nlC" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-774" y="134"/>
+            <point key="canvasLocation" x="-816" y="144"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ki2-BO-7TX"/>
+        <segue reference="qpa-5t-BGi"/>
+        <segue reference="N8w-lc-cTd"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Ellipse 1" width="115" height="115"/>
+        <image name="Image" width="245" height="270"/>
+        <namedColor name="BackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonColor">
+            <color red="0.62251967190000002" green="0.68258565660000003" blue="0.91758441930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LabelColor1">
+            <color red="0.25552933928652533" green="0.25610520989647168" blue="0.2648929176908551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LabelColor2">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
